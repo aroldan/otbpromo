@@ -7,8 +7,9 @@ applyScreens = (elSet) ->
   for e in elSet
     jqE = $(e)
 
-    jqE.attr "data-#{currentOffset}p", "transform-translate(-100%, 0px);"
-    jqE.attr "data-#{currentOffset + PER_SCREEN_OFFSET}p", "transform-translate(0%, 0px)"
+    jqE.attr "data-#{currentOffset - PER_SCREEN_OFFSET}p", "transform:translate(100%, 0px);"
+    jqE.attr "data-#{currentOffset}p", "transform:translate(0%, 0px);"
+    jqE.attr "data-#{currentOffset + PER_SCREEN_OFFSET}p", "transform:translate(-100%, 0px)"
 
     currentOffset = currentOffset + PER_SCREEN_OFFSET
 

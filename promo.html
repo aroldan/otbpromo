@@ -101,11 +101,14 @@
 	<div id="bx2" data-_box-100p="transform:translate(0,100%);" data-_box-200p="transform:translate(0,0%);"></div>
 
 	<div id="phone" data-0="transform:translate(100px, 900px);" data-50p="transform:translate(100px, 100px);">&nbsp;
-		<div class="screen">
+		<div class="screen" data-100p="transform:translate(0%, 0px);" data-200p="transform:translate(-100%, 0px);">
 			screen!
 		</div>
-		<div class="screen">
+		<div class="screen" data-100p="transform:translate(100%, 0px);" data-200p="transform:translate(-0%, 0px);">
 			screen two!
+		</div>
+		<div class="screen">
+			<h1>THREE!</h1>
 		</div>
 	</div>
 
@@ -114,14 +117,6 @@
 	<script type="text/javascript" src="otbpromo.js"></script>
 
 	<script type="text/javascript">
-	$('#phone').css('background-color', 'green');
-
-	$('li').attr("data-0p", "transform:translate(0px, 0)");
-	$('li').attr("data-120p", "transform:translate(50px, 0)");
-
-	$('#phone > .screen').each(function(el) {
-		$(el).css('background-color', 'white');
-	});
 
 	skrollr.init({
 		constants: {

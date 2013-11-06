@@ -16,11 +16,20 @@ body {
   width: 70%;
   padding-top: 10%; }
 
+#appscreen {
+  background-color: white; }
+
+#bottomscreen {
+  background-image: url(images/woodpanel.jpg);
+  background-color: orange;
+  background-size: cover; }
+
 #phone {
   width: 320px;
   height: 673px;
   background: url(images/iphone-blank.png);
-  background-size: contain; }
+  background-size: contain;
+  position: fixed; }
   #phone .screenarea {
     position: fixed;
     background-color: blue;
@@ -33,6 +42,8 @@ body {
       position: fixed;
       left: 27px;
       top: 98px;
-      background-color: red;
+      background-color: black;
       width: 269px;
-      height: 478px; }
+      height: 478px;
+      background-size: contain;
+      color: rgba(0, 0, 0, 0); }

@@ -31,29 +31,6 @@
 		background:transparent center no-repeat;
 		background-size:cover;
 	}
-
-	#bx1 {
-		background:yellow;
-		overflow:hidden;
-	}
-
-	#bx2 {
-		background-image:url(file:///Users/anthonyroldan/Pictures/push_it.jpg);
-	}
-
-	.box {
-		position:absolute;
-		left:0;
-		height:100%;
-		background:#09f;
-	}
-
-	.subbox {
-		position: relative;
-		left:600px;
-	}
-
-	p {margin:1em 0;}
 	</style>
 </head>
 
@@ -69,22 +46,38 @@
 	</div>
 
 	<div id="appscreen" data-0="transform:translate(0,100%);" data-100p="transform:translate(0,0%)" data-_box-100p="" data-_box-200p="transform:translate(0,-100%)">
-		<!-- <div class="box" data-100p="width:0%;" data-_box-100p="width:100%"></div> -->
-		<div class="righttext subbox" data-0="transform:translate(500px, 0);" data-110p="transform:translate(0, 0);">
-			<p>Activity feed</p>
-			<ul>
-				<li>See specials, drinks, and going on around town</li>
-				<li>Find new bartenders based on your tastes</li>
-				<li>Go out more</li>
-			</ul>
+		<div class="righttext subbox">
+			<h2>New Activity Feed</h2>
+			<p>See specials, drinks, and going on around town.</p>
+			<p>We'll recommend other bartenders you might like, too.</p>
+		</div>
+
+		<div class="righttext subbox">
+			<h2>Ontheway</h2>
+			<p>Let your bartender know you're on the way.</p>
+			<p>Once you've checked in several times with a bartender, let them know how big your group is and maybe she'll save you a spot at the bar.
+			</p>
+		</div>
+
+		<div class="righttext subbox">
+			<h2>Drink Details</h2>
+			<p>It's cool, we forget what Amaro Ciocaro tastes like too sometimes.</p>
+			<p>Find drinks that match your taste and mood more easily.</p>
+		</div>
+
+		<div class="righttext subbox">
+			<h2>Compliments</h2>
+			<p>Had a great night? The best negroni you've ever had?</p>
+			<p>Leave a thank you note for your bartender the next day.</p>
+			<p>Bartenders can leave you notes too to send you that recipe you asked about, return your credit card, or just thank you for coming in and enjoying a drink.</p>
 		</div>
 	</div>
 
-	<div id="bx2" data-_box-100p="transform:translate(0,100%);" data-_box-200p="transform:translate(0,0%);"></div>
+	<div id="bottomscreen" data-_box-100p="transform:translate(0,100%);" data-_box-200p="transform:translate(0,0%);"></div>
 
-	<div id="phone" data-0="transform:translate(100px, 900px);" data-50p="transform:translate(100px, 100px);">
+	<div id="phone" data-0="transform:translate(10%, 120%);" data-50p="transform:translate(10%, 5%);">
 			<div class="screenarea">
-				<div class="screen">
+				<div class="screen" style="background-image:url(images/activityfeed.png)">
 					screen!
 				</div>
 				<div class="screen">

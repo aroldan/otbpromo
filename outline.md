@@ -19,6 +19,10 @@ Let your bartender know you're on the way. If you've checked in several times wi
 
 Once you get there, we'll automatically check you in.
 
+## Improved Drinks
+
+See where drinks fall on classy to adventurous, easy going to aggressive, and sweet to savory.
+
 ## Delayed content posting
 
 Post drinks, pictures, and shouts after you've checked in.

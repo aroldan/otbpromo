@@ -1,5 +1,5 @@
 applyScreens = (elSet) ->
-  START_OFFSET = 100
+  START_OFFSET = 10
   PER_SCREEN_OFFSET = 100
 
   currentOffset = START_OFFSET

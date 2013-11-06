@@ -7,6 +7,8 @@
 
 	<title>Pausing</title>
 
+	<link href="otbpromo.css" media="all" rel="stylesheet" type="text/css">
+
 	<style type="text/css">
 	* {
 		margin:0;
@@ -28,29 +30,6 @@
 		height:100%;
 		background:transparent center no-repeat;
 		background-size:cover;
-	}
-
-	body > #phone {
-		width:320px;
-		height:568px;
-		background-color:#000;
-		overflow: hidden;
-	}
-
-	#phone > .screen {
-		position: fixed;
-		background-color: blue;
-		width:300px;
-		height:500px;
-		left:10px;
-		top:5px;
-	}
-
-	#bx0 {
-		background-color:red;
-		color: white;
-		font-size: 80px;
-		text-align: center;
 	}
 
 	#bx1 {
@@ -81,14 +60,16 @@
 <body>
 
 
-	<div id="bx0" data-0="transform:translate(0,0%);" data-100p="transform:translate(0,-100%);">
-		<h1>onthebar 3.0</h1>
-		<p>Scroll down to read more about some awesome features.</p>
+	<div id="introscreen" data-0="transform:translate(0,0%);" data-100p="transform:translate(0,-100%);">
+		<div class="righttext">
+			<h1>onthebar 3.0</h1>
+			<p>Scroll down to read more about some awesome features.</p>
+		</div>
 	</div>
 
-	<div id="bx1" data-0="transform:translate(0,100%);" data-100p="transform:translate(0,0%)" data-_box-100p="" data-_box-200p="transform:translate(0,-100%)">
+	<div id="appscreen" data-0="transform:translate(0,100%);" data-100p="transform:translate(0,0%)" data-_box-100p="" data-_box-200p="transform:translate(0,-100%)">
 		<!-- <div class="box" data-100p="width:0%;" data-_box-100p="width:100%"></div> -->
-		<div class="subbox" data-0="transform:translate(500px, 0);" data-110p="transform:translate(0, 0);">
+		<div class="righttext subbox" data-0="transform:translate(500px, 0);" data-110p="transform:translate(0, 0);">
 			<p>Activity feed</p>
 			<ul>
 				<li>See specials, drinks, and going on around town</li>
@@ -100,16 +81,16 @@
 
 	<div id="bx2" data-_box-100p="transform:translate(0,100%);" data-_box-200p="transform:translate(0,0%);"></div>
 
-	<div id="phone" data-0="transform:translate(100px, 900px);" data-50p="transform:translate(100px, 100px);">&nbsp;
-		<div class="screen" data-100p="transform:translate(0%, 0px);" data-200p="transform:translate(-100%, 0px);">
-			screen!
-		</div>
-		<div class="screen" data-100p="transform:translate(100%, 0px);" data-200p="transform:translate(-0%, 0px);">
-			screen two!
-		</div>
-		<div class="screen">
-			<h1>THREE!</h1>
-		</div>
+	<div id="phone" data-0="transform:translate(100px, 900px);" data-50p="transform:translate(100px, 100px);">
+			<div class="screen" data-100p="transform:translate(0%, 0px);" data-200p="transform:translate(-100%, 0px);">
+				screen!
+			</div>
+			<div class="screen" data-100p="transform:translate(100%, 0px);" data-200p="transform:translate(-0%, 0px);">
+				screen two!
+			</div>
+			<div class="screen">
+				<h1>THREE!</h1>
+			</div>
 	</div>
 
 	<script type="text/javascript" src="skrollr.min.js"></script>

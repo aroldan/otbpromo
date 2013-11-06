@@ -3,7 +3,7 @@
 
   applyScreens = function(elSet) {
     var PER_SCREEN_OFFSET, START_OFFSET, currentOffset, e, jqE, _i, _len, _results;
-    START_OFFSET = 100;
+    START_OFFSET = 10;
     PER_SCREEN_OFFSET = 100;
     currentOffset = START_OFFSET;
     _results = [];

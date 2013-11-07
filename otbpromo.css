@@ -4,20 +4,32 @@ body {
 #introscreen {
   background-color: black;
   color: white; }
+  #introscreen .content {
+    text-align: center; }
   #introscreen h1 {
-    font-family: Helvetica;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 5em; }
+  #introscreen h1 + p {
+    margin-top: 0.75em; }
   #introscreen p {
     font-size: 1.5em; }
 
 .righttext {
-  position: fixed;
-  left: 30%;
-  width: 50%;
-  padding-top: 10%; }
+  width: 400px;
+  padding-top: 1em; }
+  .righttext h2 + p {
+    margin-top: 0.75em; }
+  .righttext p {
+    margin-top: 0.5em; }
 
 #appscreen {
   background-color: white; }
+  #appscreen .screens {
+    position: relative; }
+    #appscreen .screens .subbox {
+      position: absolute;
+      top: 100px;
+      left: 400px; }
 
 #bottomscreen {
   background-image: url(images/woodpanel.jpg);
@@ -32,7 +44,7 @@ body {
   position: fixed; }
   #phone .screenarea {
     position: fixed;
-    background-color: blue;
+    background-color: white;
     width: 269px;
     height: 478px;
     left: 27px;

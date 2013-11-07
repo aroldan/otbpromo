@@ -10,21 +10,39 @@ body
   background-color: black
   color: white
 
+  .content
+    text-align: center
+
   h1
-    font-family: Helvetica
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
     font-size: 5em
+
+  h1 + p
+    margin-top: 0.75em
 
   p
     font-size: 1.5em
 
 .righttext
-  position: fixed
-  left: 30%
-  width: 50%
-  padding-top: 10%
+  width: 400px
+  padding-top: 1em
+
+  h2 + p
+    margin-top: 0.75em
+
+  p
+    margin-top: 0.5em
 
 #appscreen
   background-color: white 
+
+  .screens
+    position: relative
+
+    .subbox
+      position: absolute
+      top: 100px
+      left: 400px
 
 #bottomscreen
   background-image: url(images/woodpanel.jpg)
@@ -40,7 +58,7 @@ body
 
   .screenarea
     position: fixed
-    background-color: blue
+    background-color: white
     width: $screenWidth
     height: $screenHeight
     left: 27px

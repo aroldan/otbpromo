@@ -6,11 +6,12 @@
   PER_SCREEN_OFFSET = 100;
 
   applyScreens = function(elSet, gapAmount) {
-    var currentOffset, e, jqE, _i, _len, _results;
+    var count, currentOffset, e, jqE, _i, _len, _results;
     if (gapAmount == null) {
       gapAmount = 0;
     }
     currentOffset = START_OFFSET;
+    count = 1;
     _results = [];
     for (_i = 0, _len = elSet.length; _i < _len; _i++) {
       e = elSet[_i];
@@ -18,6 +19,7 @@
       jqE.attr("data-" + (currentOffset - PER_SCREEN_OFFSET + gapAmount) + "p", "opacity:0");
       jqE.attr("data-" + (currentOffset - gapAmount) + "p", "opacity:1");
       jqE.attr("data-" + (currentOffset + PER_SCREEN_OFFSET - gapAmount) + "p", "opacity:0");
+      count += 1;
       currentOffset = currentOffset + PER_SCREEN_OFFSET;
       _results.push(console.log($(e).html()));
     }

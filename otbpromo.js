@@ -20,8 +20,7 @@
       jqE.attr("data-" + (currentOffset - gapAmount) + "p", "opacity:1");
       jqE.attr("data-" + (currentOffset + PER_SCREEN_OFFSET - gapAmount) + "p", "opacity:0");
       count += 1;
-      currentOffset = currentOffset + PER_SCREEN_OFFSET;
-      _results.push(console.log($(e).html()));
+      _results.push(currentOffset = currentOffset + PER_SCREEN_OFFSET);
     }
     return _results;
   };

@@ -39,15 +39,18 @@
 
 	<div id="introscreen" data-0="transform:translate(0,0%);" data-100p="transform:translate(0,-100%);">
 		<div class="content">
-			<h1>onthebar 3.0</h1>
-			<p>Even better at connecting you to your favorite bartenders and cocktails.</p>
-			<p>Scroll on to read more about it.</p>
+			<div class="header">
+				<h1>onthebar 3.0</h1>
+			</div>
+			<p>onthebar 3.0 is better than ever at connecting you to your favorite bartenders and cocktails.</p>
+			<p></p>
+			<p>scroll down to read more.</p>
 		</div>
 	</div>
 
-	<div id="appscreen" data-0="transform:translate(0,100%);" data-100p="transform:translate(0,0%)" data-100p="" data-400p="transform:translate(0,0%)" data-500p="transform:translate(0,-100%)">
+	<div id="appscreen" data-0="transform:translate(0,100%);" data-100p="transform:translate(0,0%)" data-100p="" data-500p="transform:translate(0,0%)" data-600p="transform:translate(0,-100%)">
 
-		<div class="screens" data-100p="transform:translate(0, 0px);" data-500p="transform:translate(0, 200px);">
+		<div class="screens" data-100p="transform:translate(0, 0px);" data-600p="transform:translate(0, 200px);">
 			<div class="righttext subbox">
 				<h2>New Activity Feed</h2>
 				<p>See specials, drinks, and going on around town.</p>
@@ -66,23 +69,24 @@
 			</div>
 
 			<div class="righttext subbox">
-				<h2>Drink Details</h2>
-				<p>It's cool, we forget what Amaro Ciocaro tastes like too sometimes.</p>
-				<p>Find drinks that match your taste and mood more easily.</p>
-			</div>
-
-			<div class="righttext subbox">
 				<h2>Compliments</h2>
 				<p>Had a great night? The best negroni you've ever had?</p>
 				<p>Leave a thank you note for your bartender the next day.</p>
 				<p>Bartenders can leave you notes too to send you that recipe you asked about, return your credit card, or just thank you for coming in and enjoying a drink.</p>
 			</div>
+
+			<div class="righttext subbox">
+				<h2>Drink Details</h2>
+				<p>It's cool, we forget what Amaro Ciocaro tastes like too sometimes.</p>
+				<p>Find drinks that match your taste and mood more easily.</p>
+			</div>
+
 		</div>
 	</div>
 
-	<div id="bottomscreen" data-400p="transform:translate(0,100%);" data-500p="transform:translate(0,0%);"></div>
+	<div id="bottomscreen" data-500p="transform:translate(0,100%);" data-600p="transform:translate(0,0%);"></div>
 
-	<div id="phone" data-0="transform:translate(10%, 120%);" data-50p="transform:translate(10%, 5%);">
+	<div id="phone" data-0="transform:translate(10%, 120%) rotate(0deg);" data-50p="transform:translate(10%, 5%) rotate(0deg);" data-500p="transform:translate(10%, 5%) rotate(0deg);" data-620p="transform:translate(-30%, 120%) rotate(30deg);">
 			<div class="screenarea">
 				<div class="screen" style="background-image:url(images/activityfeed.png)">
 					&nbsp;
@@ -93,10 +97,20 @@
 				<div class="screen" style="background-image:url(images/ontheway-barseats.png)">
 					&nbsp;
 				</div>
+				<div class="screen" style="background-image:url(images/compliments.png)">
+					&nbsp;
+				</div>
 				<div class="screen" style="background-image:url(images/drinks.png)">
 					&nbsp;
 				</div>
 			</div>
+	</div>
+
+	<div id="napkin" data-580p="transform:translate(150%, 300%);" data-630p="transform:transate(150%, 30%)">&nbsp;</div>
+
+	<div id="cta" data-600p="opacity:0" data-628p="opacity:1">
+		<p>Get the update, and get to the bar!</p>
+		<a href="http://itunes.apple.com/us/app/bostonflip/id451503483" target="_blank"><img alt="Appstore" src="http://www.onthebar.com/images/appstore.png" width="250px"></a>
 	</div>
 
 	<script type="text/javascript" src="skrollr.min.js"></script>

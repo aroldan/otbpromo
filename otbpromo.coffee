@@ -16,15 +16,5 @@ applyScreens = (elSet, gapAmount = 0) ->
 
     currentOffset = currentOffset + PER_SCREEN_OFFSET
 
-    console.log $(e).html()
-
-# applyScrolls = (elSet) ->
-#   currentOffset = START_OFFSET
-
-#   for e in elSet
-#     jqE = $(e)
-
-#     jqE.attr "data-#{cz"
-
 applyScreens $('#phone .screenarea .screen')
 applyScreens $('#appscreen .subbox'), 20

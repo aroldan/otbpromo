@@ -5,14 +5,21 @@ body {
   background-color: black;
   color: white; }
   #introscreen .content {
-    text-align: center; }
-  #introscreen h1 {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 5em; }
-  #introscreen h1 + p {
+    width: 500px;
+    margin-left: 300px;
+    margin-top: 50px; }
+  #introscreen .header {
+    min-width: 466px;
+    min-height: 132px;
+    background-image: url(images/onthebar3header.png);
+    background-repeat: no-repeat; }
+    #introscreen .header h1 {
+      display: none; }
+  #introscreen .header + p {
     margin-top: 0.75em; }
   #introscreen p {
-    font-size: 1.5em; }
+    font-size: 1.2em;
+    margin-top: 0.75em; }
 
 .righttext {
   width: 400px;
@@ -36,6 +43,25 @@ body {
   background-color: orange;
   background-size: cover; }
 
+#napkin {
+  background-image: url(images/napkin.png);
+  background-size: cover;
+  width: 340px;
+  height: 340px;
+  position: fixed; }
+
+#cta {
+  position: fixed;
+  left: 100px;
+  top: 40%;
+  padding: 0.6em;
+  width: 255px;
+  height: 160px;
+  background-color: white;
+  color: black; }
+  #cta img {
+    margin-top: 1em; }
+
 #phone {
   width: 320px;
   height: 673px;
@@ -44,7 +70,7 @@ body {
   position: fixed; }
   #phone .screenarea {
     position: fixed;
-    background-color: white;
+    background-color: black;
     width: 269px;
     height: 478px;
     left: 27px;

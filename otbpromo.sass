@@ -11,17 +11,25 @@ body
   color: white
 
   .content
-    text-align: center
+    width: 500px
+    margin-left: 300px
+    margin-top: 50px
 
-  h1
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif
-    font-size: 5em
+  .header
+    min-width: 466px
+    min-height: 132px
+    background-image: url(images/onthebar3header.png)
+    background-repeat: no-repeat
 
-  h1 + p
+    h1
+      display: none
+
+  .header + p
     margin-top: 0.75em
 
   p
-    font-size: 1.5em
+    font-size: 1.2em
+    margin-top: 0.75em
 
 .righttext
   width: 400px
@@ -49,6 +57,26 @@ body
   background-color: orange
   background-size: cover
 
+#napkin
+  background-image: url(images/napkin.png)
+  background-size: cover
+  width: 340px
+  height: 340px
+  position: fixed
+
+#cta
+  position: fixed
+  left: 100px
+  top: 40%
+  padding: 0.6em
+  width: 255px
+  height: 160px
+  background-color: white
+  color: black
+
+  img
+    margin-top: 1em
+
 #phone
   width: 320px
   height: 673px
@@ -58,7 +86,7 @@ body
 
   .screenarea
     position: fixed
-    background-color: white
+    background-color: black
     width: $screenWidth
     height: $screenHeight
     left: 27px
